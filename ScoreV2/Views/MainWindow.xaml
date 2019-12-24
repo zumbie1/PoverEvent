@@ -1,0 +1,52 @@
+﻿<Window x:Class="ScoreV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScoreV2"
+        mc:Ignorable="d"
+        Title="Power Event" Height="550" Width="800">
+    
+    
+    
+    <Grid>
+        <Label Content="AKTIVITITER" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team1" Content="HOLD 1" HorizontalAlignment="Left" Margin="132,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team2" Content="HOLD 2" HorizontalAlignment="Left" Margin="234,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team3" Content="HOLD 3" HorizontalAlignment="Left" Margin="326,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team4" Content="HOLD 4" HorizontalAlignment="Left" Margin="420,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team5" Content="HOLD 5" HorizontalAlignment="Left" Margin="513,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team6" Content="HOLD 6" HorizontalAlignment="Left" Margin="602,10,0,0" VerticalAlignment="Top"/>
+        
+        
+        <Label Content="Tyr" HorizontalAlignment="Left" Margin="27,76,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fodbold" HorizontalAlignment="Left" Margin="27,131,0,0" VerticalAlignment="Top"/>
+        <Label Content="Fodbold Stød" HorizontalAlignment="Left" Margin="27,176,0,0" VerticalAlignment="Top"/>
+        <Label Content="Resultat" HorizontalAlignment="Left" Margin="29,286,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="team1Tyr" Content="0" HorizontalAlignment="Left" Margin="147,76,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="team1Fod" Content="0" HorizontalAlignment="Left" Margin="147,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+        <Button x:Name="team1FodP" Content="+" HorizontalAlignment="Left" Margin="129,131,0,0" VerticalAlignment="Top" Width="18" Click="team1FodP_Click"/>
+        <Button x:Name="team1FodM" Content="-" HorizontalAlignment="Left" Margin="165,131,0,0" VerticalAlignment="Top" Width="18" Click="team1FodM_Click"/>
+
+        <Label x:Name="team1FodS" Content="0" HorizontalAlignment="Left" Margin="147,176,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+        <Button x:Name="team1FodSP" Content="+" HorizontalAlignment="Left" Margin="129,181,0,0" VerticalAlignment="Top" Width="18" Click="team1FodSP_Click"/>
+        <Button x:Name="team1FodSM" Content="-" HorizontalAlignment="Left" Margin="165,181,0,0" VerticalAlignment="Top" Width="18" Click="team1FodSM_Click"/>
+
+
+        <Label x:Name="team1Res" Content="0" HorizontalAlignment="Left" Margin="149,286,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+
+        <Label x:Name="team2Tyr" Content="0" HorizontalAlignment="Left" Margin="251,71,0,0" VerticalAlignment="Top"/>
+
+        <Label x:Name="team2Fod" Content="0" HorizontalAlignment="Left" Margin="251,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+        <Button x:Name="team2FodP" Content="+" HorizontalAlignment="Left" Margin="233,129,0,0" VerticalAlignment="Top" Width="18" Click="team2FodP_Click"/>
+        <Button x:Name="team2FodM" Content="-" HorizontalAlignment="Left" Margin="267,129,0,0" VerticalAlignment="Top" Width="18" Click="team2FodM_Click"/>
+
+        <Label x:Name="team2Fods" Content="0" HorizontalAlignment="Left" Margin="251,178,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+        <Button x:Name="team2FodSP" Content="+" HorizontalAlignment="Left" Margin="233,182,0,0" VerticalAlignment="Top" Width="18" Click="team2FodSP_Click"/>
+        <Button x:Name="team2FodSM" Content="-" HorizontalAlignment="Left" Margin="267,181,0,0" VerticalAlignment="Top" Width="18" Click="team2FodSM_Click"/>
+
+        <Label x:Name="team2Res" Content="0" HorizontalAlignment="Left" Margin="252,286,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
+    </Grid>
+</Window>
