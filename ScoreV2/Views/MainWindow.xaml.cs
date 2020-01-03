@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -12,7 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using ScoreV2.Models;
+using ScoreV2.Views;
 
 namespace ScoreV2
 {
@@ -108,6 +107,10 @@ namespace ScoreV2
             loadT2();
         }
 
-
+        private void lbControl_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            Control c = new Control();
+            c.Show();
+        }
     }
 }

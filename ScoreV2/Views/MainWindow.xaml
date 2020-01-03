@@ -10,7 +10,7 @@
     
     
     <Grid>
-        <Label Content="AKTIVITITER" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbControl" Content="AKTIVITITER" HorizontalAlignment="Left" Margin="27,10,0,0" VerticalAlignment="Top" MouseLeftButtonUp="lbControl_MouseLeftButtonUp"/>
         <Label x:Name="team1" Content="HOLD 1" HorizontalAlignment="Left" Margin="132,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="team2" Content="HOLD 2" HorizontalAlignment="Left" Margin="234,10,0,0" VerticalAlignment="Top"/>
         <Label x:Name="team3" Content="HOLD 3" HorizontalAlignment="Left" Margin="326,10,0,0" VerticalAlignment="Top"/>
@@ -19,11 +19,16 @@
         <Label x:Name="team6" Content="HOLD 6" HorizontalAlignment="Left" Margin="602,10,0,0" VerticalAlignment="Top"/>
         
         
+        
+        
         <Label Content="Tyr" HorizontalAlignment="Left" Margin="27,76,0,0" VerticalAlignment="Top"/>
         <Label Content="Fodbold" HorizontalAlignment="Left" Margin="27,131,0,0" VerticalAlignment="Top"/>
         <Label Content="Fodbold Stød" HorizontalAlignment="Left" Margin="27,176,0,0" VerticalAlignment="Top"/>
         <Label Content="Resultat" HorizontalAlignment="Left" Margin="29,286,0,0" VerticalAlignment="Top"/>
 
+        
+        
+        
         <Label x:Name="team1Tyr" Content="0" HorizontalAlignment="Left" Margin="147,76,0,0" VerticalAlignment="Top"/>
 
         <Label x:Name="team1Fod" Content="0" HorizontalAlignment="Left" Margin="147,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
