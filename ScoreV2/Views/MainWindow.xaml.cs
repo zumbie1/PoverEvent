@@ -112,5 +112,11 @@ namespace ScoreV2
             Control c = new Control();
             c.Show();
         }
+
+        private void team1Tyr_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            TyrScore ts = new TyrScore();
+            ts.Show();
+        }
     }
 }

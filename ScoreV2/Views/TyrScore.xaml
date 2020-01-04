@@ -1,0 +1,30 @@
+﻿<Window x:Class="ScoreV2.Views.TyrScore"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScoreV2.Views"
+        mc:Ignorable="d"
+        Title="TyrScore" Height="470" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Margin="10">
+            <Label Content="Spillere"/>
+            <ListBox x:Name="listPersoner" Height="368"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="10">
+                <Label Content="Navn"/>
+                <Label Content="Sekunder"/>
+            <Label Content="Forsøg 1"/>
+            <TextBox x:Name="txtSec1"/>
+            <Label Content="Forsøg 2"/>
+            <TextBox x:Name="txtSec2"/>
+            <Label Content="Forsøg 3"/>
+            <TextBox x:Name="txtSec3"/>
+            <Button x:Name="cmdSave" Content="Gem" Click="cmdSave_Click" Margin="0 10"/>
+        </StackPanel>
+    </Grid>
+</Window>

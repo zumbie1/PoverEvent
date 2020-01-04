@@ -29,7 +29,7 @@
         
         
         
-        <Label x:Name="team1Tyr" Content="0" HorizontalAlignment="Left" Margin="147,76,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="team1Tyr" Content="0" HorizontalAlignment="Left" Margin="147,76,0,0" VerticalAlignment="Top" MouseLeftButtonUp="team1Tyr_MouseLeftButtonUp"/>
 
         <Label x:Name="team1Fod" Content="0" HorizontalAlignment="Left" Margin="147,128,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.247,0.579"/>
         <Button x:Name="team1FodP" Content="+" HorizontalAlignment="Left" Margin="129,131,0,0" VerticalAlignment="Top" Width="18" Click="team1FodP_Click"/>
