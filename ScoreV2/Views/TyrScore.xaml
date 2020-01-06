@@ -13,10 +13,10 @@
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0" Margin="10">
             <Label Content="Spillere"/>
-            <ListBox x:Name="listPersoner" Height="368"/>
+            <ListBox x:Name="listPersoner" Height="368" SelectionChanged="listPersoner_SelectionChanged"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Margin="10">
-                <Label Content="Navn"/>
+                <Label x:Name="lbPName" Content="Navn"/>
                 <Label Content="Sekunder"/>
             <Label Content="Forsøg 1"/>
             <TextBox x:Name="txtSec1"/>

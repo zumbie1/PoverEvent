@@ -1,21 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ScoreV2.Models
 {
     public class Team
     {
-        public List<string> team1 = new List<string>();
-        public List<string> team2 = new List<string>();
-        public List<string> team3 = new List<string>();
-        public List<string> team4 = new List<string>();
-        public List<string> team5 = new List<string>();
-        public List<string> team6 = new List<string>();
-        public List<string> team7 = new List<string>();
-        public List<string> team8 = new List<string>();
-        public List<string> team9 = new List<string>();
-        public List<string> team10 = new List<string>();
+        public static List<Person> personer = new List<Person>();
 
+        public static int getCountTeam(int team)
+        {
+            return personer.Where(s => s.TeamNumb == team).Count();
+        }
+
+        public static List<Person> getTeamPlayers(int team)
+        {
+            return personer.Where(s => s.TeamNumb == team).ToList();
+        }
     }
 }

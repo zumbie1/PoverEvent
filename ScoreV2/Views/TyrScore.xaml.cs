@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ScoreV2.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,19 +18,27 @@ namespace ScoreV2.Views
     /// </summary>
     public partial class TyrScore : Window
     {
+        Team t;
         public TyrScore()
         {
             InitializeComponent();
+            t = new Team();
+            load();
         }
 
         public void load()
         {
-            
+            listPersoner.ItemsSource = Team.personer;
         }
 
         private void cmdSave_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void listPersoner_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lbPName.Content = listPersoner.SelectedItem.ToString();
         }
     }
 }

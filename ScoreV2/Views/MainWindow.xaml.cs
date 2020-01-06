@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ScoreV2.Models;
 using ScoreV2.Views;
 
 namespace ScoreV2
@@ -45,13 +46,19 @@ namespace ScoreV2
             ts.Show();
         }
 
-        public void addEvent(string navn)
+        public void addEvent(Event ev)
         {
             Label l = new Label();
-            l.Content = navn;
+            l.Content = ev.Name;
             col1.Children.Add(l);
-
-            col2.Children.Add(new knapper());
+            if(ev.EventType == 1)
+            {
+                Label lb = new Label();
+                lb.Content = 0;
+                lb.MouseLeftButtonUp += team1Tyr_MouseLeftButtonUp;
+                col2.Children.Add(lb);
+            }
+            
         }
     }
 }
