@@ -15,7 +15,7 @@
         <StackPanel Grid.Column="0" Margin="10">
             <Label Content="Aktivitet"/>
             <ListBox x:Name="listEvent" Height="368"/>
-            <Button x:Name="cmdAddA" Content="Tilføj" HorizontalAlignment="Right" Width="37"/>
+            <Button x:Name="cmdAddA" Content="Tilføj" HorizontalAlignment="Right" Width="37" Click="cmdAddA_Click"/>
         </StackPanel>
         <StackPanel Grid.Column="1" Margin="10">
             <Label Content="Navn"/>

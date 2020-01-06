@@ -16,9 +16,12 @@ namespace ScoreV2.Views
     /// </summary>
     public partial class Control : Window
     {
-        public Control()
+
+        MainWindow parent;
+        public Control(MainWindow p)
         {
             InitializeComponent();
+            parent = p;
             loadA();
         }
         
@@ -48,76 +51,7 @@ namespace ScoreV2.Views
 
         public List<string> p = new List<string>();
         public List<string> emty = new List<string>();
-        int hold1;
-        int hold2;
-        int hold3;
-        int hold4;
-        int hold5;
-        int hold6;
-        int hold7;
-        int hold8;
-        int hold9;
-        int hold10;
-
-        int githubTEST;
-        //test
-        /* public void TeamCount()
-         {
-             int team = Int32.Parse(txtTeamNum.Text);
-             int alt = hold1 + hold2 + hold3 + hold4 + hold5 + hold6 + hold7 + hold8 + hold9 + hold10;
-             alt--;
-             lbResultat.Content = "spillere i alt: " + alt;
-             if (team == 1)
-             {
-                 hold1--;
-                 lbTeam1.Content = "hold 1: " + hold1;
-             }
-             else if (team == 2)
-             {
-                 hold2--;
-                 lbTeam2.Content = "hold 2: " + hold2;
-             }
-             else if (team == 3)
-             {
-                 hold3--;
-                 lbTeam3.Content = "hold 3: " + hold3;
-             }
-             else if (team == 4)
-             {
-                 hold4--;
-                 lbTeam4.Content = "hold 4: " + hold4;
-             }
-             else if (team == 5)
-             {
-                 hold5--;
-                 lbTeam5.Content = "hold 5: " + hold5;
-             }
-             else if (team == 6)
-             {
-                 hold6--;
-                 lbTeam6.Content = "hold 6: " + hold6;
-             }
-             else if (team == 7)
-             {
-                 hold7--;
-                 lbTeam7.Content = "hold 7: " + hold7;
-             }
-             else if (team == 8)
-             {
-                 hold8--;
-                 lbTeam8.Content = "hold 8: " + hold8;
-             }
-             else if (team == 9)
-             {
-                 hold9--;
-                 lbTeam9.Content = "hold 9: " + hold9;
-             }
-             else if (team == 10)
-             {
-                 hold10--;
-                 lbTeam10.Content = "hold 10: " + hold10;
-             }
-         }*/
+  
         public void AddPlayer()
         {
  
@@ -131,8 +65,8 @@ namespace ScoreV2.Views
 
             if (team == 1)
             {
-                hold1++;
-                lbTeam1.Content = "hold 1: " + hold1;
+                
+                lbTeam1.Content = "hold 1: " + team1;
             }
             else if (team == 2)
             {
@@ -200,6 +134,12 @@ namespace ScoreV2.Views
         private void cmdDeletePlayer_Click(object sender, RoutedEventArgs e)
         {
             RemovePlayer();
+        }
+
+        private void cmdAddA_Click(object sender, RoutedEventArgs e)
+        {
+            string s = "test";
+            parent.addEvent(s);
         }
     }
 }
